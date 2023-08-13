@@ -55,6 +55,7 @@
 (reformatter-define python-autoimport
   :program python-autoimport-command
   :args python-autoimport-arguments
+  :stdin nil
   :stdout nil
   )
 
