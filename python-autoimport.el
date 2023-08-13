@@ -54,7 +54,7 @@
 ;;;###autoload (autoload 'python-autoimport-on-save-mode "python-autoimport" nil t)
 (reformatter-define python-autoimport
   :program python-autoimport-command
-  :args python-autoimport-arguments
+  :args (append (list input-file) python-autoimport-arguments)
   :stdin nil
   :stdout nil
   )
